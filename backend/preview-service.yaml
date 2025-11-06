@@ -1,0 +1,15 @@
+kind: service
+apiversion: v1
+metadata:
+  name: backend-preview
+  namespace: expense
+spec:
+  selector:
+    app: backend
+    tier: backend
+    project: expense
+    version: blue
+  ports:
+  - protocol: TCP
+    port: 8080
+    targetPort: 8080  
