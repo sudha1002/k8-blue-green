@@ -26,7 +26,7 @@ spec:
     spec: 
       containers:
       - name: backend
-        image: sudhanaga1002/backend:1.0.0
+        image: sudhanaga1002/backend:3.0.0
         envFrom:
         - configMapRef:
             name: backend
