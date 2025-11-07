@@ -4,4 +4,4 @@ metadata:
   name: backend
   namespace: expense
 data:
-  DB_HOST: expense-dev.devaws.fun
+  DB_HOST: mysql-dev.devaws.fun
