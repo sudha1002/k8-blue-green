@@ -6,13 +6,13 @@ metadata:
   annotations:
     alb.ingress.kubernetes.io/scheme: internet-facing
     alb.ingress.kubernetes.io/target-type: ip
-    alb.ingress.kubernetes.io/listen-ports: '[{"HTTP": 80}]'
-    alb.ingress.kubernetes.io/certificate-arn: arn:aws:acm:us-east-1:396913711219:certificate/48b503ff-a03c-4638-aa34-c14b4ad1ccc6
+    alb.ingress.kubernetes.io/listen-ports: '[{"HTTPS": 443}]'
+    alb.ingress.kubernetes.io/certificate-arn: arn:aws:acm:us-east-1:396913711219:certificate/14c59c56-f06c-473e-a7db-c4e472c79865
     alb.ingress.kubernetes.io/group.name: joindevops
 spec:
   ingressClassName: alb
   rules:
-  - host: "expense-dev.devaws.fun"
+  - host: "expense-dev.daws82s.online"
     http:
       paths:
       - pathType: Prefix
